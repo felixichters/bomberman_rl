@@ -1,0 +1,4 @@
+# Runtime dependencies of the AlphaBomb agent (tournament play).
+# Training/analysis extras are in requirements-dev.txt at the repository root.
+numpy
+scikit-learn
