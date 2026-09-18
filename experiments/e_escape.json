@@ -1,0 +1,73 @@
+{
+  "name": "e_escape",
+  "stage": "t2b",
+  "rounds": 3000,
+  "init": "runs/linear_t2b/best.npz",
+  "eval_every": 300,
+  "eval_rounds": 50,
+  "base": {
+    "feature_set": "v2",
+    "model": "linear",
+    "gamma": 0.97,
+    "n_step": 5,
+    "lr": 0.0005,
+    "batch_size": 64,
+    "train_every": 4,
+    "updates_per_step": 1,
+    "buffer_size": 150000,
+    "warmup": 2000,
+    "grad_clip": 5.0,
+    "target_sync": 250,
+    "double": true,
+    "ridge_lambda": 1.0,
+    "refit_every": 0,
+    "per_alpha": 0.6,
+    "per_beta": 0.4,
+    "per_beta_end": 1.0,
+    "per_eps": 0.001,
+    "policy": "epsilon_greedy",
+    "eps_start": 0.4,
+    "eps_end": 0.05,
+    "eps_decay_rounds": 900.0,
+    "temperature": 1.0,
+    "temperature_end": 0.05,
+    "safe_exploration": true,
+    "forest_trees": 40,
+    "forest_max_depth": 16,
+    "forest_min_leaf": 20,
+    "forest_max_features": 1.0,
+    "fqi_every": 300,
+    "fqi_iterations": 5,
+    "fqi_max_samples": 150000,
+    "augment": 8,
+    "reward_scheme": "potential+events",
+    "step_penalty": 0.0,
+    "death_penalty": -8.0,
+    "invalid_penalty": -0.4,
+    "crate_reward": 0.4,
+    "coin_found_reward": 0.4,
+    "psi_coin": 0.5,
+    "psi_crate": 0.2,
+    "psi_enemy": 0.1,
+    "psi_safe": 0.15,
+    "psi_cleared": 1.0,
+    "psi_escape": 1.0,
+    "bomb_bonus": 0.0,
+    "bomb_bonus_rounds": 1500.0,
+    "preload": "runs/expert/crates-medium.npz",
+    "seed": 0,
+    "total_rounds": 3000,
+    "checkpoint_every": 500
+  },
+  "variants": {
+    "escape_0": {
+      "psi_escape": 0.0
+    },
+    "escape_1": {
+      "psi_escape": 1.0
+    },
+    "escape_2": {
+      "psi_escape": 2.0
+    }
+  }
+}

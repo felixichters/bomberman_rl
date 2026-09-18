@@ -1,3 +1,4 @@
+lecture.pdf
 final_project.pdf
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -112,3 +113,15 @@ screenshots/*.webm
 
 replays/
 results/
+
+# AlphaBomb project
+.venv/
+runs/
+experiments/out/
+docs/report/*.aux
+docs/report/*.log
+docs/report/*.out
+docs/report/*.toc
+.pytest_cache/
+*.zip
+.DS_Store

@@ -1,0 +1,7 @@
+FROM continuumio/miniconda3
+
+WORKDIR /home/bomberman
+RUN pip install --no-cache-dir numpy scikit-learn tqdm
+
+COPY . .
+CMD ["/bin/bash"]
