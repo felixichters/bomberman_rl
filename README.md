@@ -1,9 +1,11 @@
-# bomberman_rl — AlphaBomb
+# bomberman_rl AlphaBomb
 
 RL agent for the MLE final project.
 Team AlphaBomb: Felix Ichters, Lukas Dzielski.
 
 The agent is in `agent_code/alphabomb/`.
+
+(We moved the code to a clean repo to keep the report out, but feel free to contact us if you need the original commit history.)
 
 ## Setup
 
